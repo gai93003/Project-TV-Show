@@ -1,3 +1,20 @@
 #root {
-  color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section {
+  margin: 0.6rem;
+  padding: 1rem;
+  background: #e0dfe0;
+  border-radius: 0.2rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+img {
+  margin: 5px auto;
+  display: block;
 }
