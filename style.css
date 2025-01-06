@@ -1,10 +1,16 @@
 #root {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 19rem 19rem 19rem;
+  gap: 1rem;
+  justify-content: center;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
 section {
-  margin: 0.6rem;
+  display: block;
   padding: 1rem;
   background: #e0dfe0;
   border-radius: 0.2rem;
