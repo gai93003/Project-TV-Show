@@ -6,7 +6,22 @@ function setup() {
 
 function makePageForEpisodes(episodeList) {
   const rootElem = document.getElementById("root");
-  rootElem.textContent = `Got ${episodeList.length} episode(s)`;
+
+  episodeList.forEach((episodeItem) => {
+    const card = document.getElementById('film-card').content.cloneNode(true);
+    const section = card.querySelector('section');
+    const image = card.querySelector('img').src = episodeItem.image.medium;
+    const summary = card.querySelector('#summary').innerHTML = episodeItem.summary;
+
+    const formattedseason = String(episodeItem.season).padStart(2, '0');
+    const forEpisode = String(episodeItem.number).padStart(2, '0');
+    const h3 = card.querySelector('h3').textContent = `${episodeItem.name} ~ S${formattedseason}E${forEpisode}`;
+
+    console.log(formattedseason, forEpisode)
+    // section.append(h3);
+    card.appendChild(section)
+    rootElem.append(card)
+  });
 }
 
 window.onload = setup;
