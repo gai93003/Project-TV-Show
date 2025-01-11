@@ -21,6 +21,7 @@ function searchEpisodes() {
       );
     });
     makePageForEpisodes(filteredEpisodes);
+    displayEpisode(allEpisodes.length, filteredEpisodes.length);
   });
 }
 
@@ -76,5 +77,11 @@ function selectEpisode() {
   })
 }
 
+function displayEpisode(allEpisodes,pickedEpisode) {
+  const paragraghEl = document.getElementById("display");
+  paragraghEl.textContent = `Display ${pickedEpisode}/${allEpisodes}`
+  
+  
+}
 searchEpisodes();
 window.onload = setup;
