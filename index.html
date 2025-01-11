@@ -10,8 +10,11 @@
 
   <body>
     <a href="http://api.tvmaze.com/"> <h2>Game of thrones ~ Click to find out more about the show</h2></a>
-    <div id="root">
-    </div>
+    <main id="root">
+      <div id="input-div"><input type="text" placeholder="Search here" id="inputEl"></div>
+      <div id="all-episodes"></div>
+      
+    </main>
 
     <template id="film-card">
       <section>
@@ -20,6 +23,8 @@
         <p id="summary"></p>
       </section>
     </template>
+
+    
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
