@@ -1,8 +1,26 @@
-#root {
+#all-episodes {
   display: grid;
   grid-template-columns: 19rem 19rem 19rem;
   gap: 1rem;
   justify-content: center;
+  font-family: sans-serif;
+  
+}
+#input-div {
+  
+  margin: 1rem;
+  padding: 1rem;
+}
+#inputEl{
+ border: none;
+ outline: none;
+ background-color: #E0DFE0;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-family: sans-serif;
+  max-width: 25%;
+  border-radius: 0.2rem;
+
 }
 a {
   text-decoration: none;
