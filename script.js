@@ -3,8 +3,7 @@ let statusFlag = "loading";
 let allEpisodes = [];
 
 async function setup() {
-    await getAllEpisodes();
-  
+  await getAllEpisodes();
   makePageForEpisodes(allEpisodes);
   
 }
