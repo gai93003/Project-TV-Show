@@ -12,6 +12,7 @@ async function setup() {
     //load the first show by default
     const firstShowId = allShows[0].id;
     await fetchEpisodesForShow(firstShowId);
+
   makePageForEpisodes(allEpisodes);
   searchEpisodes(); // Call search function after episodes are loaded
   
