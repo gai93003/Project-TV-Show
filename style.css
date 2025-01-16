@@ -50,7 +50,12 @@ section {
 }
 
 #input-div {
-  display: none;
+  display: block;
+}
+
+#show-search{
+  display: block !important;
+  visibility: visible !important;
 }
 
 #all-episodes {
