@@ -31,7 +31,6 @@ input, #display, select {
 }
 input, select {
   background-color: #053a574b;
-  /* flex: 1fr; */
 }
 select>option {
   background-color: rgba(0, 70, 128, 0.61);
@@ -41,7 +40,6 @@ section {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  /* flex: 15rem; */
   background-color: #f0eeee;
   border-radius: 10px;
   margin-bottom: 1rem;

@@ -1,5 +1,3 @@
-//You can edit ALL of the code here
-
 //store fetched data to avoid redundant requests
 let statusFlag = "loading";
 let allEpisodes = [];
@@ -161,7 +159,6 @@ function searchEpisodes() {
   backBtn.addEventListener("click", () => {
     document.getElementById("all-shows").style.display = "block";
     document.getElementById("all-episodes").style.display = "none";
-    // document.getElementById("input-div").style.display = "none";
     document.getElementById("input-div").style.display = "flex";
     backBtn.style.display = "none";
   });
