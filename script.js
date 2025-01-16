@@ -250,6 +250,7 @@ function selectEpisode() {
       displayEpisode(allEpisodes.length, 1);
     }
   });
+  
 }
 
 function displayEpisode(allEpisodes, pickedEpisode) {
@@ -301,7 +302,7 @@ function searchAvailableShows(showsToDisplay = allShows) { // Default to allShow
 
       allShowsContainer.style.display = "none";
       document.getElementById("input-div").style.display = "flex";
-      document.getElementById("all-episodes").style.display = "flex";
+      document.getElementById("all-episodes").style.display = "grid";
       document.getElementById("input-div").style.display = "flex";
       document.getElementById("back-btn").style.display = "block";
 
