@@ -10,18 +10,18 @@
 </head>
 
 <body>
-  <a href="http://api.tvmaze.com/">
-    <h2>Game of thrones ~ Click to find out more about the show</h2>
-  </a>
   <main id="root">
+    <!-- This div contains all the select and search inputs to let the user interact with the page to let them search and select the shows and episodes -->
     <div id="input-div">
       <select name="" id="show-dropdown"></select>
       <select id="select-el">
         <option select value="all" id="selected">Select one episode...</option>
       </select>
-      <input type="text" placeholder="Search here..." id="inputEl">
+      <input type="text" placeholder="Search episodes..." id="inputEl">
       <p id="display"></p>
     </div>
+
+    <!-- These two div toggle between the shows and episodes. -->
     <div id="all-episodes">
     </div>
     <div id="all-shows">
@@ -29,6 +29,7 @@
 
   </main>
 
+  <!-- The template is being to used to display the episode info. -->
   <template id="film-card">
     <section>
       <a href="">
@@ -37,20 +38,9 @@
       <img src="" alt="">
       <p id="summary"></p>
     </section>
-
-    <!-- <section class="show-details">
-      <a href="">
-        <h3>Film title</h3>
-      </a>
-      <div class="details">
-        <img src="" alt="">
-        <p id="summary"></p>
-      </div>
-    </section> -->
+    </section>
   </template>
 
   <script src="script.js"></script>
-
 </body>
-
 </html>
